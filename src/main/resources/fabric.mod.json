@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "fantasydimensions",
+  "version": "${version}",
+  "name": "Fantasy Dimensions Worldgen",
+  "description": "Adds five emotional fantasy biomes with custom worldgen",
+  "authors": ["FantasyDev"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/fantasydimensions/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.fantasydimensions.FantasyDimensions"
+    ],
+    "fabric-datagen": [
+      "com.fantasydimensions.datagen.FantasyDatagen"
+    ],
+    "terrablender": [
+      "com.fantasydimensions.worldgen.FantasyTerraBlenderAPI"
+    ]
+  },
+  "mixins": [
+    "fantasydimensions.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*",
+    "terrablender": ">=4.0.0"
+  }
+}
